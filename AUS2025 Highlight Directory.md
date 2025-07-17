@@ -1,9 +1,7 @@
 # CS2 Highlight Reels from Charms - Austin 2025
+Original data source consisting of CDNs / highlight titles
 
 ---
-
-Project context:
-I want to build a simple deno webapp, I want a navbar at the top for future navigation use case, a dark & light mode with toggle on the top right of the nav bar --> each ### title like: Spirit vs Mouz should be a expandable section with a 4a grid layout 4x 4:3 videos sourced from CDNs underneath that heading like shown in this .md file representing what video is to be embedded. The expandable section should also list the number of videos in the expandable section, let's make this for now and let's make it as simple as possible
 
 ## Mirage Clips
 
