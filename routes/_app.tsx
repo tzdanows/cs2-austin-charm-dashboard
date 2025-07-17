@@ -6,7 +6,7 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>webapp</title>
+        <title>Austin 2025 CS2 Highlights</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
