@@ -1,9 +1,12 @@
 import { App, fsRoutes, staticFiles } from "fresh";
 import { define, type State } from "./utils.ts";
 
+// Try to determine if we're on Deno Deploy
+const isDeployment = Deno.env.get("DENO_DEPLOYMENT_ID") !== undefined;
+
 export const app = new App<State>({
-  // Force dev mode on Deno Deploy to avoid build requirements
-  dev: true,
+  // Use dev mode on deployment to avoid build cache issues
+  dev: isDeployment,
 });
 
 app.use(staticFiles());
