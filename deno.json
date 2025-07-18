@@ -2,8 +2,7 @@
   "tasks": {
     "check": "deno fmt --check . && deno lint . && deno check **/*.ts && deno check **/*.tsx",
     "dev": "deno run -A --watch=static/,routes/ dev.ts",
-    "build": "deno run -A dev.ts build && deno run -A build_static_simple.ts",
-    "build:static": "deno run -A build_static_simple.ts",
+    "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts --port=8000",
     "start": "deno run -A main.ts",
     "update": "deno run -A -r jsr:@fresh/update ."
@@ -41,6 +40,22 @@
       "body",
       "html",
       "head"
+    ]
+  },
+  "deploy": {
+    "project": "aus2025-charm-rates",
+    "exclude": [
+      "docs/",
+      "README.md"
+    ],
+    "include": [
+      "main.ts",
+      "routes/",
+      "islands/",
+      "static/",
+      "data.json",
+      "utils.ts",
+      "fresh.config.ts"
     ]
   }
 }
