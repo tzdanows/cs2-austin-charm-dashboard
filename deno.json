@@ -42,23 +42,4 @@
       "head"
     ]
   },
-  "deploy": {
-    "project": "aus2025-charm-rates",
-    "exclude": [
-      "docs/",
-      "README.md",
-      "deploy.md"
-    ],
-    "include": [
-      "main.ts",
-      "routes/",
-      "islands/",
-      "static/",
-      "_fresh/",
-      "data.json",
-      "utils.ts",
-      "fresh.config.ts",
-      "dev.ts"
-    ]
-  }
 }
