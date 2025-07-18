@@ -22,9 +22,6 @@ jobs:
         with:
           deno-version: v2.x
 
-      - name: Build Fresh assets
-        run: deno task build
-
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
