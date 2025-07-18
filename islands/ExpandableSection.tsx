@@ -150,7 +150,7 @@ export default function ExpandableSection({ match }: ExpandableSectionProps) {
                 {map.videos.map((video, index) => (
                   <div
                     key={index}
-                    class="bg-canvas-subtle border border-muted rounded-lg overflow-hidden hover:border-accent transition-all duration-200"
+                    class="bg-canvas-subtle border border-border-muted rounded-lg overflow-hidden hover:border-accent hover:shadow-sm transition-all duration-200 group"
                   >
                     <div class="aspect-video bg-black">
                       <video
@@ -164,7 +164,7 @@ export default function ExpandableSection({ match }: ExpandableSectionProps) {
                       </video>
                     </div>
                     <div class="p-3">
-                      <p class="text-sm text-fg-default font-medium truncate">
+                      <p class="text-sm font-medium text-fg-default leading-tight">
                         {video.title}
                       </p>
                     </div>
