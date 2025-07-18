@@ -1,10 +1,7 @@
 import { App, fsRoutes, staticFiles } from "fresh";
 import { define, type State } from "./utils.ts";
 
-export const app = new App<State>({
-  // Always use dev mode to avoid build cache issues on Deno Deploy
-  dev: true,
-});
+export const app = new App<State>();
 
 app.use(staticFiles());
 
